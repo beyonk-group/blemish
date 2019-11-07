@@ -1,4 +1,4 @@
-# Upmark
+# Blemish
 
 A simple, pluggable, markdown parser. Designed for size and simplicity.
 Based on original code by https://codepen.io/kvendrik/pen/Gmefv
@@ -6,13 +6,13 @@ Based on original code by https://codepen.io/kvendrik/pen/Gmefv
 ## Install
 
 ```bash
-npm i --save upmark
+npm i --save blemish
 ```
 
 ## Use
 
 ```js
-const { parse } = require('upmark')
+const { parse } = require('blemish')
 
 const markdown = '__Hello, World__'
 
@@ -22,8 +22,8 @@ const html = parse(markdown)
 ## Customise
 
 ```js
-const { parse } = require('upmark')
-const b = require('upmark/lib/tags/b')
+const { parse } = require('blemish')
+const b = require('blemish/lib/tags/b')
 
 const markdown = '_Hello, World__'
 
@@ -33,7 +33,7 @@ const html = parse(markdown, [ b ])
 ## Improve
 
 ```js
-const { parse } = require('upmark')
+const { parse } = require('blemish')
 
 const customTag = function (markdown) {
   return markdown.replace(/^%(\w+)%$/g, '<marquee>$1</marquee>')
