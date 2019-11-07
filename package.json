@@ -1,0 +1,21 @@
+{
+  "name": "upmark",
+  "version": "0.0.0",
+  "description": "Simple pluggable markdown parser",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha lib/**.spec.js"
+  },
+  "keywords": [
+    "Markdown"
+  ],
+  "author": "Antony Jones",
+  "license": "MIT",
+  "devDependencies": {
+    "@hapi/code": "^7.0.0",
+    "mocha": "^6.2.2"
+  }
+}
